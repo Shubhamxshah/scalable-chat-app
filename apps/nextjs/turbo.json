@@ -1,0 +1,16 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "env": ["GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+    },
+    "dev": {
+      "env": ["GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET"]
+    },
+    "start": {
+      "env": ["GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET"]
+    }
+  }
+}
+
